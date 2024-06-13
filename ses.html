@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #btn-div {
+        background-color: black;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+    }
+    .btn {
+        background-color: red;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        margin: 1rem;
+        padding: 1.5rem 3rem;
+        font-size: 1.2rem;
+        font-family: inherit;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        opacity: 0.5;
+    }
+
+
+</style>
+<body>
+
+<audio class="inek" src="Javasrcipt/inek.mp3"></audio>
+<audio class="it" src="Javasrcipt/it.mp3"></audio>
+<audio class="pisik" src="Javasrcipt/pisik.mp3"></audio>
+<audio class="qoyun" src="Javasrcipt/qoyun.mp3"></audio>
+<audio class="qaz" src="Javasrcipt/qaz.mp3"></audio>
+<audio class="essek" src="Javasrcipt/essek.mp3"></audio>
+
+<div id="btn-div">
+    <button class="btn">Inek</button>
+    <button class="btn">It</button>
+    <button class="btn">pisik</button>
+    <button class="btn">qoyun</button>
+    <button class="btn">qaz</button>
+    <button class="btn">essek</button>
+</div>
+
+<script>
+    const inekSound = document.querySelector('.inek');
+    const itSound = document.querySelector('.it');
+    const pisikSound = document.querySelector('.pisik');
+    const qoyunSound = document.querySelector('.qoyun');
+    const qazSound = document.querySelector('.qaz');
+    const esekSound = document.querySelector('.essek');
+
+    const inekButton = document.querySelectorAll('.btn')[0];
+    const itButton = document.querySelectorAll('.btn')[1];
+    const pisikButton = document.querySelectorAll('.btn')[2];
+    const qoyunButton = document.querySelectorAll('.btn')[3];
+    const qazButton = document.querySelectorAll('.btn')[4];
+    const esekButton = document.querySelectorAll('.btn')[5];
+
+    inekButton.addEventListener('click', () => {
+        inekSound.play();
+    });
+
+    itButton.addEventListener('click', () => {
+        itSound.play();
+    });
+
+    pisikButton.addEventListener('click', () => {
+        pisikSound.play();
+    });
+
+    qoyunButton.addEventListener('click', () => {
+        qoyunSound.play();
+    });
+
+    qazButton.addEventListener('click', () => {
+        qazSound.play();
+    });
+
+    esekButton.addEventListener('click', () => {
+        esekSound.play();
+    });
+</script>
+
+
+
+</body>
+</html>
